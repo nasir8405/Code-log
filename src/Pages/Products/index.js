@@ -7,7 +7,7 @@ import {  ProductProvider } from './productProvider'
 const ProductPage = () => {
   return (
     <ProductProvider>
-      <div className='container'>
+      <div className='container my-3'>
         <div className='row'>
           <Aside />
           <Outlet></Outlet>

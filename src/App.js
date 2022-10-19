@@ -15,6 +15,7 @@ function App() {
           <Route path=':type' element={<Products />} />
           <Route path='/products' element={<Navigate to="/products/all" />} />
         </Route>
+          <Route path='/' element={<Navigate to="/products/all" />} />
         <Route path='/gallery' element={<GalleryPage />} />
         <Route path='/parent' element={<ParentPage />} />
       </Routes>

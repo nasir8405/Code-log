@@ -1,28 +1,37 @@
 import { createContext, useReducer } from "react";
-import {mockData} from './mockData'
+import { mockData } from './mockData'
 
 export const ProductContext = createContext();
 
-const productsReducer = (state, action)=> {
-    // console.log(action, state)
+const productsReducer = (state, action) => {
     switch (action.type) {
         case 'all':
-            const clonedState = {...state}
+            const clonedState = { ...state }
             clonedState.selectedProducts = [...state.products]
             return clonedState
-        case 'tv':
-            const tvData = {...state}
-            const newData =tvData.products.filter((p)=> p.type === 'telivision')
+        case 'laptop':
+            const laptopData = { ...state }
+            const laptopD = laptopData.products.filter((product) => product.type === action.type)
+            laptopData.selectedProducts = laptopD
+            return laptopData
+        case 'telivision':
+            const tvData = { ...state }
+            const newData = tvData.products.filter((product) => product.type === action.type)
             tvData.selectedProducts = newData
             return tvData
+        case 'mobile':
+            const mobileData = { ...state }
+            const newMobileData = mobileData.products.filter((product) => product.type === action.type)
+            mobileData.selectedProducts = newMobileData
+            return mobileData
         default:
-            return {...mockData}
+            return { ...mockData }
     }
 }
-export const ProductProvider = (props)=> {
+export const ProductProvider = (props) => {
     const [state, dispatch] = useReducer(productsReducer, mockData)
     return (
-        <ProductContext.Provider value={{state, dispatch}}>
+        <ProductContext.Provider value={{ state, dispatch }}>
             {props.children}
         </ProductContext.Provider>
     )
