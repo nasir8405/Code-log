@@ -14,6 +14,7 @@ export const TopNavigation = () => {
           <Nav className="me-auto">
             <Nav.Link  as={Link} to="/products">Products</Nav.Link>
             <Nav.Link as={Link} to="/gallery">Gallery</Nav.Link>
+            <Nav.Link as={Link} to="/parent">Parent</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

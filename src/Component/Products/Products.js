@@ -6,8 +6,8 @@ import { Product } from './Product'
 export const Products = () => {
   const context = useContext(ProductContext)
   const params = useParams()
-  console.log(context.state.productData)
-  const { selectedProducts } = context.state.productData;
+  console.log(context.state)
+  const { selectedProducts } = context.state;
   useEffect(()=> {
     context.dispatch({type: params.type})
   }, [params.type])

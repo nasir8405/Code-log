@@ -7,18 +7,15 @@ const productsReducer = (state, action)=> {
     // console.log(action, state)
     switch (action.type) {
         case 'all':
-            const clonedState = {...state, productData: {...state.productData, selectedProducts: []}}
-            clonedState.productData.selectedProducts = [...state.productData.products]
+            const clonedState = {...state}
+            clonedState.selectedProducts = [...state.products]
             return clonedState
         case 'tv':
-            const tvData = {...state, productData: {...state.productData, selectedProducts: []}}
-            const newData =tvData.productData.products.filter((p)=> p.type === 'telivision')
-            
-            tvData.productData.selectedProducts = newData
-
+            const tvData = {...state}
+            const newData =tvData.products.filter((p)=> p.type === 'telivision')
+            tvData.selectedProducts = newData
             return tvData
         default:
-            // console.log('default..')
             return {...mockData}
     }
 }

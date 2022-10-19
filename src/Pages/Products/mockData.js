@@ -1,5 +1,4 @@
 export const mockData = {
-    productData: {
       productType: [
         {
           id: 0,
@@ -197,5 +196,4 @@ export const mockData = {
       selectedProducts: [
         
       ]
-    }
   }
