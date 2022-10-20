@@ -1,8 +1,6 @@
 import { createContext, useReducer } from "react";
 import { mockData } from './mockData'
-
 export const ProductContext = createContext();
-
 const productsReducer = (state, action) => {
     switch (action.type) {
         case 'all':
@@ -24,11 +22,17 @@ const productsReducer = (state, action) => {
             const newMobileData = mobileData.products.filter((product) => product.type === action.type)
             mobileData.selectedProducts = newMobileData
             return mobileData
+        case 'search':
+            const searchData = { ...state }
+            const newSearchData = searchData.products.filter((product) => product.type.includes (action.payload) || product.description.includes (action.payload))
+            searchData.selectedProducts = newSearchData
+            return searchData
         default:
             return { ...mockData }
     }
 }
 export const ProductProvider = (props) => {
+    console.log(mockData)
     const [state, dispatch] = useReducer(productsReducer, mockData)
     return (
         <ProductContext.Provider value={{ state, dispatch }}>

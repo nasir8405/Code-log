@@ -1,7 +1,6 @@
 import React from 'react'
 
 export const Product = ({data}) => {
-  console.log(data)
   return (
     <div className='col-4 my-3'>
       <div className="card">
