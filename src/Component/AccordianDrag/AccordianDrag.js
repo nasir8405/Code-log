@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import Accordion from "react-bootstrap/Accordion";
-import "../../App.css";
 import { BsArrowRight } from "react-icons/bs";
 import { Context } from "../../Pages/AccordianDrag/AccordianDragProvider";
 

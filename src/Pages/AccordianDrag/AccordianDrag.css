@@ -1,0 +1,12 @@
+.icon-btn {
+  background-color: transparent;
+  border: 0;
+}
+.accordion-header1 {
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-bottom: none !important;
+}
+.accordion-body1 {
+  max-height: max-content !important;
+}

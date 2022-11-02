@@ -22,6 +22,9 @@ export const TopNavigation = () => {
           <Nav.Link as={Link} to="/counter">
             Counter
           </Nav.Link>
+          <Nav.Link as={Link} to="/tabular">
+            Tabular
+          </Nav.Link>
         </Nav>
       </Container>
     </Navbar>

@@ -1,8 +1,8 @@
 import React from "react";
-import "../../App.css";
 import { Count } from "../../Component/CountVal/Count/Count";
 import { Val } from "../../Component/CountVal/Val/Val";
 import { CouterProvider } from "./CouterProvider";
+import "./Counter.css";
 
 const CounterPage = () => {
   return (

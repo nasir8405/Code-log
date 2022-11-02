@@ -1,0 +1,13 @@
+.count-val-wrapper {
+  padding: 20px;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  border: 2px solid black;
+}
+.count {
+  margin-right: 50px;
+}
+.count > div {
+  margin-bottom: 30px;
+}
