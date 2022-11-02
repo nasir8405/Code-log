@@ -1,10 +1,10 @@
 import React from "react";
-import { Accordian } from "./Accordian";
+import { AccordianDrag } from "./AccordianDrag";
 
 export const LeftSide = () => {
   return (
     <div className="col-6">
-      <Accordian />
+      <AccordianDrag />
     </div>
   );
 };

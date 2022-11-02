@@ -4,7 +4,7 @@ import "../../App.css";
 import { BsArrowRight } from "react-icons/bs";
 import { Context } from "../../Pages/AccordianDrag/AccordianDragProvider";
 
-export const Accordian = () => {
+export const AccordianDrag = () => {
   const context = useContext(Context);
   const { selectedState } = context.reducerState;
   const { countries } = context.reducerState;
