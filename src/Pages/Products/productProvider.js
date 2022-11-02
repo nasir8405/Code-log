@@ -42,7 +42,6 @@ const productsReducer = (state, action) => {
   }
 };
 export const ProductProvider = (props) => {
-  console.log(mockData);
   const [state, dispatch] = useReducer(productsReducer, mockData);
   return (
     <ProductContext.Provider value={{ state, dispatch }}>
