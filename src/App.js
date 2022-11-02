@@ -4,6 +4,7 @@ import { TopNavigation } from "./Component/Navigation/TopNavigation";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Products } from "./Component/Products/Products";
 import ProductPage from "./Pages/Products";
+import { AccordianProvider } from "./Pages/Context/AccordianProvider";
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
           <Route path="/products" element={<Navigate to="/products/all" />} />
         </Route>
         <Route path="/" element={<Navigate to="/products/all" />} />
+        <Route path="/accordian" element={<AccordianProvider />} />
       </Routes>
     </div>
   );
