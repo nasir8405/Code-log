@@ -16,8 +16,8 @@ export const TopNavigation = () => {
           <Nav.Link as={Link} to="/accordian">
             Accordian
           </Nav.Link>
-          <Nav.Link as={Link} to="/parent">
-            Parent
+          <Nav.Link as={Link} to="/accordianDrag">
+            AccordianDrag
           </Nav.Link>
         </Nav>
       </Container>

@@ -1,5 +1,4 @@
 import React, { createContext } from "react";
-import { Accordian } from "../../Component/Accordian/Accordian";
 import { accoridanData } from "./mockData";
 export const Context = createContext();
 
