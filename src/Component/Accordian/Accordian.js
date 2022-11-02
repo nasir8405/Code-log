@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Context } from "../../Pages/Context/AccordianProvider";
+import { Context } from "../../Pages/Accordian/AccordianProvider";
 import "./Accordian.css";
 export const Accordian = () => {
   const accoridanData = useContext(Context);

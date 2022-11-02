@@ -4,7 +4,7 @@ import { TopNavigation } from "./Component/Navigation/TopNavigation";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Products } from "./Component/Products/Products";
 import ProductPage from "./Pages/Products";
-import { AccordianProvider } from "./Pages/Context/AccordianProvider";
+import { AccordianProvider } from "./Pages/Accordian/AccordianProvider";
 function App() {
   return (
     <div className="App">

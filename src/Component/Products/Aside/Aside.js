@@ -1,7 +1,7 @@
 import React, { lazy, Suspense, useContext, useState } from "react";
 import Button from "react-bootstrap/Button";
 import { NavLink } from "react-router-dom";
-import { ProductContext } from "../../../Pages/Products/productProvider";
+import { ProductContext } from "../../../Pages/Products/ProductProvider";
 import "./Aside.css";
 // import ProductModal from '../Products/Modal/ProductModal';
 const ProductModal = lazy(() => import("../Modal/ProductModal"));

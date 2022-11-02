@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import { Aside } from "../../Component/Products/Aside/Aside";
-import { ProductProvider } from "./productProvider";
+import { ProductProvider } from "./ProductProvider";
 
 const ProductPage = () => {
   return (
