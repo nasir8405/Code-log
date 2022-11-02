@@ -6,6 +6,7 @@ import { Products } from "./Component/Products/Products";
 import ProductPage from "./Pages/Products";
 import AccordianPage from "./Pages/Accordian";
 import AccordianDragPage from "./Pages/AccordianDrag";
+import CounterPage from "./Pages/Counter";
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Navigate to="/products/all" />} />
         <Route path="/accordian" element={<AccordianPage />} />
         <Route path="/AccordianDrag" element={<AccordianDragPage />} />
+        <Route path="/counter" element={<CounterPage />} />
       </Routes>
     </div>
   );

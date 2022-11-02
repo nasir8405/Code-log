@@ -19,6 +19,9 @@ export const TopNavigation = () => {
           <Nav.Link as={Link} to="/accordianDrag">
             AccordianDrag
           </Nav.Link>
+          <Nav.Link as={Link} to="/counter">
+            Counter
+          </Nav.Link>
         </Nav>
       </Container>
     </Navbar>

@@ -24,10 +24,13 @@ export const AccordianDrag = () => {
         {countries.map((item, index) => {
           return (
             <Accordion.Item eventKey={index} key={item.id}>
-              <Accordion.Header onClick={() => handleDispatch(item.group)}>
+              <Accordion.Header
+                className="accordion-header1"
+                onClick={() => handleDispatch(item.group)}
+              >
                 {item.country}
               </Accordion.Header>
-              <Accordion.Body>
+              <Accordion.Body className="accordion-body1">
                 <ul>
                   {selectedState.map((item, index) => {
                     return (
